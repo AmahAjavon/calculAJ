@@ -1,0 +1,59 @@
+ > *,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+.container {
+  margin: 20px auto;
+  width: 600px;
+}
+.calculator {
+  padding: 30px 20px 30px 68px;
+  margin-top: 20px;
+  background-color: blue;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 1px 1px 0 #CCC,2px 2px 0 #CCC, 3px 3px 0 #444,5px 5px 0 #444,6px 6px 0 #444,7px 7px 0 #444;
+}
+.calculator > input[type=text] {
+  box-shadow: 1px 1px 0 #CCC,1px 1px 0 #CCC, 1px 1px 0 #444,1px 1px 0 #444,2px 2px 0 #444,3px 3px 0 #444;
+  width: 90%;
+  border-radius: 10px;
+  height: 50px;
+  border: 50px;
+  background-color: #eee;
+  text-align: right;
+  font-size: 30px;
+  padding: 20px 100px 40px 20px;
+}
+.calculator .row {
+  margin-top: 10px;
+  padding-left: 17px;
+}
+.calculator button {
+  box-shadow: 1px 1px 0 #CCC,1px 1px 0 #CCC, 1px 1px 0 #444,1px 1px 0 #444,2px 2px 0 #444,3px 3px 0 #444;
+  width: 100px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  margin-right: 5px;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.calculator button:hover {
+  cursor: pointer;
+}
+button.last {
+  margin-right: 0px;
+}
+button.action {
+  background-color: #646060;
+}
