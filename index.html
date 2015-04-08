@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="calculator">
-        <input type="text">
-        <div class="row">
-          <button class="button">1</button>
-          <button class="button">2</button>
-          <button class="button">3</button>
-          <button class="last button">0</button>
-        </div>
-        <div class="row">
-          <button class="button">4</button>
-          <button class="button">5</button>
-          <button class="button">6</button>
-          <button id="clear" class="last">C</button>
-        </div>
-        <div class="row">
-          <button class="button">7</button>
-          <button class="button">8</button>
-          <button class="button">9</button>
-          <button class="last plusmin">+/-</button>
-        </div>
-        <div class="row">
-          <button class="button op">+</button>
-          <button class="button op">-</button>
-          <button class="button op">*</button>
-          <button class="last button op">/</button>
-        </div>
-        <div class="row">
-          <button class="button expo">e</button>
-          <button class="root">sqr</button>
-          <button class="button">.</button>
-          <button class="last equals">=</button>
-        </div>
-      </div>
+<head>
+  <title>AJ Simple Calculator</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="calculator">
+      <input type="text" class="calc-screen" value="" maxlength="8">
+      <table>
+        <tr>
+          <td id="clear">AC</td>
+          <td class="plusmin">+/-</td>
+  				<td class="button expo">%</td>
+          <td class="button op">/</td>
+  		  </tr>
+  			<tr>
+  				<td class="button">7</td>
+  				<td class="button">8</td>
+  				<td class="button">9</td>
+          <td class="button op">*</td>
+  			</tr>
+  			<tr>
+  			  <td class="button">4</td>
+  				<td class="button">5</td>
+  				<td class="button">6</td>
+          <td class="button op">-</td>
+  			</tr>
+  			<tr>
+  				<td class="button">1</td>
+  				<td class="button">2</td>
+  				<td class="button">3</td>
+          <td class="button op">+</td>
+  			</tr>
+  			<tr>
+  				<td class="button">0</td>
+          <td class="root">&radic;</td>
+  				<td class="button">.</td>
+  				<td class="equals op">=</td>
+
+  			</tr>
+  		</table>
     </div>
-    <p class="text-center"><a href="https://github.com/AmahAjavon/calculAJ">Github source code     </a></p>
-    <h5 class="text-center"> Copyright &copy; 2015 Amah Ajavon</h5>
-  </body>
-  <script src="vendor/jquery/dist/jquery.js"></script>
-  <script src="main.js"></script>
+  </div>
+  <p class="text-center"><a href="https://github.com/AmahAjavon/calculAJ">Github source code     </a></p>
+  <h5 class="text-center"> Copyright &copy; 2015 Amah Ajavon</h5>
+</body>
+<script src="vendor/jquery/dist/jquery.js"></script>
+<script src="main.js"></script>
 </html>
